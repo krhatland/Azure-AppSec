@@ -379,7 +379,7 @@
                         "name": "SSH",
                         "properties": {
                             "description": "Allow inbound SSH connection",
-                            "protocol": "TCP",
+                            "protocol": "Tcp",
                             "sourcePortRange": "*",
                             "destinationPortRange": "22",
                             "sourceAddressPrefix": "[variables('inboundSources')]",
@@ -393,7 +393,7 @@
                         "name": "GAiA-portal",
                         "properties": {
                             "description": "Allow inbound HTTPS access to the GAiA portal",
-                            "protocol": "TCP",
+                            "protocol": "Tcp",
                             "sourcePortRange": "*",
                             "destinationPortRange": "30443",
                             "sourceAddressPrefix": "[variables('inboundSources')]",
@@ -407,7 +407,7 @@
                         "name": "HTTPS",
                         "properties": {
                             "description": "Allow inbound HTTPS access",
-                            "protocol": "TCP",
+                            "protocol": "Tcp",
                             "sourcePortRange": "*",
                             "destinationPortRange": "443",
                             "sourceAddressPrefix": "[variables('inboundSources')]",
@@ -421,7 +421,7 @@
                         "name": "HTTP",
                         "properties": {
                             "description": "Allow inbound HTTP access",
-                            "protocol": "TCP",
+                            "protocol": "Tcp",
                             "sourcePortRange": "*",
                             "destinationPortRange": "80",
                             "sourceAddressPrefix": "[variables('inboundSources')]",
