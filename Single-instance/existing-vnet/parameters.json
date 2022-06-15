@@ -1,0 +1,72 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westeurope"
+        },
+        "vmName": {
+            "value": "AppSecVM"
+        },
+        "inboundSources": {
+            "value": "0.0.0.0/0"
+        },
+        "authenticationType": {
+            "value": "password"
+        },
+        "adminPassword": {
+            "value": SSH_PW
+        },
+        "waapAgentToken": {
+            "value": CP_TOKEN
+        },
+        "waapAgentFog": {
+            "value": ""
+        },
+        "vmSize": {
+            "value": "Standard_DS2_v2"
+        },
+        "waapPublicIP": {
+            "value": "yes"
+        },
+        "bootstrapScript": {
+            "value": ""
+        },
+        "sourceImageVhdUri": {
+            "value": "noCustomUri"
+        },
+        "virtualNetworkName": {
+            "value": "Appsec-vNet"
+        },
+        "virtualNetworkAddressPrefix": {
+            "value": "10.0.0.0/16"
+        },
+        "Subnet1Name": {
+            "value": "Appsec-frontend"
+        },
+        "Subnet1Prefix": {
+            "value": "10.0.0.0/25"
+        },
+        "Subnet1StartAddress": {
+            "value": "10.0.0.4"
+        },
+        "Subnet2Name": {
+            "value": "Appsec-backend"
+        },
+        "Subnet2Prefix": {
+            "value": "10.0.0.128/25"
+        },
+        "Subnet2StartAddress": {
+            "value": "10.0.0.132"
+        },
+        "vnetNewOrExisting": {
+            "value": "existing"
+        },
+        "virtualNetworkExistingRGName": {
+            "value": "Network-RG",
+            "metadata": {
+                "description": "Name of resource group containing vNet"
+            } 
+        }
+    }
+}
